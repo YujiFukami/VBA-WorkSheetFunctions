@@ -7,6 +7,7 @@ Function SheetName$()
     Application.Volatile '自動再計算を有効にする
     SheetName = Application.ThisCell.Parent.Name
 End Function
+
 Function MojiKugiri$(Target As Range, KugiriMoji$, OutputNum%)
 '文字列を分割して指定番号の文字を出力する
 '20210726
