@@ -1,11 +1,11 @@
 Attribute VB_Name = "ModWSFunction"
 Option Explicit
 'ワークシート関数
-Function SheetName$()
+Function GetSheetName$()
 '入力セルのシート名を出力
 '20210726
     Application.Volatile '自動再計算を有効にする
-    SheetName = Application.ThisCell.Parent.Name
+    GetSheetName = Application.ThisCell.Parent.Name
 End Function
 
 Function MojiKugiri$(Target As Range, KugiriMoji$, OutputNum%)
